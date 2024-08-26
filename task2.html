@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Bash Animation</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url(Musical\ Note\ Staff\ Abstract\ Light\ Effect\ Dreamy\ Blue\ Background\ Wallpaper\ Image\ For\ Free\ Download\ -\ Pngtree.jpeg); 
+            margin: 0;
+            flex-direction: column;
+        }
+
+        .music-bash {
+            position: relative;
+            width: 100px;
+            height: 200px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+
+        .bar {
+            width: 15px;
+            background-color: lightgray;
+            animation: bounce 1s ease-in-out infinite;
+
+        }
+
+        .bar:nth-child(1) {
+            animation-delay: 0.1s;
+        }
+
+        .bar:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+
+        .bar:nth-child(3) {
+            animation-delay: 0.3s;
+        }
+
+        .bar:nth-child(4) {
+            animation-delay: 0.4s;
+        }
+
+        .bar:nth-child(5) {
+            animation-delay: 0.5s;
+        }
+        @keyframes bounce {
+            0%, 100% {
+                height: 50px;
+            }
+            50% {
+                height: 150px;
+            }
+        }
+
+        .note {
+            position: absolute;
+            font-size: 30px;
+            color: #b03629;
+            animation:float 5s linear infinite;
+        }
+
+        .note:nth-child(6) {
+            top: 100%;
+            left: 10%;
+            animation-delay: 0s;
+        }
+
+        .note:nth-child(7) {
+            top: 110%;
+            left: 50%;
+            animation-delay: 2s;
+        }
+
+        .note:nth-child(8) {
+            top: 120%;
+            left: 80%;
+            animation-delay: 3s;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0);
+            }
+            100% {
+                transform: translateY(-300px);
+            }
+        }
+        .container{
+            border: 1px solid;
+            height: 100px;
+            width: 100px;
+            border-radius: 150px;
+            display: sticky;
+            top:0;
+            margin: 0;
+        }
+.rotating-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 150px;
+    animation: rotate 5s linear infinite;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg) ;
+    }
+    to {
+        transform: rotate(360deg) ;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img class="rotating-image" src="/songs/3 Movie Poster design_ Dhanush_ShruthiHaasan _Moonu.jpeg">
+    </div>
+    
+    <div class="music-bash">
+        <div class="wave"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="note">♫</div>
+        <div class="note">♪</div>
+        <div class="note">♬</div>
+    </div>
+    <br>
+    <br>
+    <audio controls>
+        <source src="/songs/[iSongs.info] 04 - Feel My Love.mp3">
+    </audio>
+</body>
+</html>
